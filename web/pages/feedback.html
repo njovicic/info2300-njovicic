@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Serbia</title>
+		<link rel="icon" type="image/ico" href="../images/serbia.ico">
+		<link rel="stylesheet" href="../styles/normalize.css">
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/feedback.css">
+		<link rel="stylesheet" href="../styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).read(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu")};
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><img src="../images/serbianflag.jpg" alt="SerbianFlag" width="85"/></a>
+			<h1>Србија</h1>
+			<h2>Contact Us</h2>
+		</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="images.html">Gallery</a>
+					<ul>
+						<li><a href="#">Gallery 1</a></li>
+						<li><a href="#">Gallery 2</a>
+							<ul>
+								<li><a href="#">Sub Gallery 1</a></li>
+								<li><a href="#">Sub Gallery 2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="table.html">Statistics</a></li>
+				<li><a href="feedback.html">Contact Us</a></li>
+			</ul>
+		<main>
+			<aside id="nav_list">
+				<ul>
+					<li><a href="../index.html"><img src="../images/serbiabackground.jpg" alt="home" width="60">Home</a></li>
+					<li><a href="images.html"><img src="../images/hramsvetogsave.jpg" alt="images" width="60">Gallery</a></li>
+					<li><a href="videos.html"><img src="../images/serbiadanube.jpg" alt="videos" width="60">Videos</a></li>
+					<li><a href="table.html"><img src="../images/serbiavalley.jpg" alt="table" width="60">Statistics</a></li>
+					<li><a href="feedback.html"><img src="../images/serbiafortress.jpg" alt="feedback" width="60">Contact Us</a></li>
+				</ul>
+			</aside>
+			<article>
+				<h3>Please enter the following information:</h3>
+					<form action="subscribe.html" method="get" name="email_form" id="email_form">
+						<label for="first_name">First Name:</label>
+							<input type="text" name="first_name" id="first_name" autofocus required><br>
+						<label for="last_name">Last Name:</label>
+							<input type="text" name="last_name" id="last_name" required><br>
+						<label for="email">Email:</label>
+							<input type="email" name="email" id="email" required><br>
+						<label for="location">Your Location:</label>
+							<select name="location" tabindex="4">
+								<optgroup label="North America">
+									<option value="Canada">Canada</option>
+									<option value="Mexico">Mexico</option>
+									<option value="United States">United States</option>
+								</optgroup>
+								<optgroup label="Europe">
+									<option value="United Kingdom">United Kingdom</option>
+									<option value="France">France</option>
+									<option value="Germany">Germany</option>
+								</optgroup>
+							</select><br>
+						<label for="language">Language:</label>
+							<select name="language" size="4" tabindex="5" multiple>
+								<option value="English">English</option>
+								<option value="French">French</option>
+								<option value="Spanish">Spanish</option>
+								<option value="German">German</option>
+								<option value="Russian">Russian</option>
+							</select><br>
+						<label for="comments">Comments:</label>
+							<textarea type="text" name="comments" tabindex="6" rows="7" cols="50" placeholder="Comments..."></textarea><br>
+							<input type="submit" name="submit" id="button" tabindex="7" value="Submit">
+							<input type="reset" name="reset" id="button" tabindex="8" value="Reset">
+					</form>
+			</article>
+			<aside id="rightaside">
+				<p>Thank you for visiting.</p><br>
+				<p>Please describe your experience using our site.</p>
+				<form name="controls" id="controls">
+					<input type="checkbox" name="excellent" tabindex="9">Excellent<br>
+					<input type="checkbox" name="funtovisit" tabindex="10">Fun to visit<br>
+					<input type="checkbox" name="design" tabindex="11">Well designed<br>
+					<input type="checkbox" name="easy" tabindex="12">Easy to use<br>
+					<input type="submit" name="submit" id="button" tabindex="13" value="Submit"><br>
+				</form><br>
+				<p>Would you visit our website again?</p>
+				<form name="visit">
+					<input type ="radio" name="visit" value="yes" tabindex="14">Yes
+					<input type ="radio" name="visit" value="no" tabindex="15">No<br>
+					<input type="submit" name="submit" id="button" tabindex="16" value="Submit">
+				</form>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; 2018 SeeSerbia.com</p>
+		</footer>
+	</body>
+</html>
